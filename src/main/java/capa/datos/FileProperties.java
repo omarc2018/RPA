@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CapaDatos;
+package capa.datos;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -23,7 +23,7 @@ public class FileProperties {
         InputStream isArchivo;
         
         try {
-            isArchivo = new FileInputStream("D:\\Documents\\NetBeansProjects\\ManagerRPA\\src\\CapaDatos\\Configuracion.properties");
+            isArchivo = new FileInputStream("D:\\Documents\\NetBeansProjects\\ManagerRPA\\src\\Capa\\Datos\\Configuracion.properties");
             oPropiedades.load(isArchivo);
         } catch (IOException e) {
             System.out.print(e.toString());
