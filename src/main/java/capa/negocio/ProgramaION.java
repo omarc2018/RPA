@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.winium.DesktopOptions;
 import org.openqa.selenium.winium.WiniumDriver;
+import sun.swing.SwingUtilities2;
 
 
 
@@ -18,8 +19,9 @@ public class ProgramaION {
     static final String REPORTE = "Reports";
     static final String REGISTROS = "Revenue Log";
     static final String MOSTRAR = "Display";
-    static final String FECHAINICIO = "Since";
-    static final String FECHAFIN = "Until";
+    static final String INICIO = "Since";
+    static final String PANELINICIO = "1501";
+    static final String PANELFIN = "17 diciembre 2018";
     static final String BTNOK = "OK";
     static final String GUARDARCOMO = "Save As...";
     static final String NOMBRE = "Nombre:";
@@ -38,50 +40,55 @@ public class ProgramaION {
         DesktopOptions option = new DesktopOptions();
         option.setApplicationPath("C:\\Program Files (x86)\\Schneider Electric\\ION Setup\\ionsetup.exe");
         WiniumDriver driver = new WiniumDriver(new URL("http://localhost:9999"), option);
-        Thread.sleep(3000);
+        Thread.sleep(2500);
         
         driver.findElement(By.name("Password:")).click();       
         driver.findElement(By.name("Password:")).sendKeys("0");
        /* driver.findElement(By.name("Password:")).sendKeys(Keys.TAB);
         /* Thread.sleep(1000);
-        driver.findElement(By.name("OK")).sendKeys(Keys.TAB);
-         Thread.sleep(1000);
+        
         driver.findElement(By.name("Exit")).sendKeys(Keys.TAB);
          Thread.sleep(500);
         driver.findElement(By.name("Help")).sendKeys(Keys.TAB);
         Thread.sleep(500);
-        driver.findElement(By.name("Exit")).click();
-         Thread.sleep(500);*
-        */
+        driver.findElement(By.name("Exit")).sendKeys(Keys.SPACE);*/
+        
         driver.findElement(By.name(BTNOK)).click();
-        Thread.sleep(1000);
+        Thread.sleep(250);
        
         driver.findElement(By.name("DESKTOP-3TGV4KL")).click();
         driver.findElement(By.name("DESKTOP-3TGV4KL")).submit();
         driver.findElement(By.name("SESOC")).click();
         driver.findElement(By.name("SESOC")).submit();
         driver.findElement(By.name("CL-1022")).click();
-        Thread.sleep(500);
         driver.findElement(By.name(ASISTENTE)).click();
-        Thread.sleep(500);
         driver.findElement(By.name(ASISTENTE)).submit();
-        Thread.sleep(500);
         driver.findElement(By.name(REPORTE)).click();
-        Thread.sleep(250);
         driver.findElement(By.name(REGISTROS)).click();
-        Thread.sleep(1000);
         driver.findElement(By.name(MOSTRAR)).click();
-        Thread.sleep(1000);
-        driver.findElement(By.name(FECHAINICIO)).click();
-        Thread.sleep(1000);
+        Thread.sleep(250);
+        driver.findElement(By.name(INICIO)).click();
+        driver.findElement(By.id(PANELINICIO)).click();
+        driver.findElement(By.id(PANELINICIO)).sendKeys(Keys.SPACE, Keys.SPACE, "01");
+        /*driver.findElement(By.id(PANELINICIO)).sendKeys(Keys.LEFT);
+        driver.findElement(By.id(PANELINICIO)).sendKeys("diciembre");
+        driver.findElement(By.id(PANELINICIO)).sendKeys(Keys.LEFT);
+        driver.findElement(By.id(PANELINICIO)).sendKeys("01");*/
+        Thread.sleep(500);
+        driver.findElement(By.name(PANELFIN)).click();
+        driver.findElement(By.name(PANELFIN)).sendKeys(Keys.SPACE, Keys.SPACE, "16");
+        /*driver.findElement(By.name(PANELFIN)).sendKeys(Keys.LEFT);
+        driver.findElement(By.name(PANELFIN)).sendKeys("diciembre");
+        driver.findElement(By.name(PANELFIN)).sendKeys(Keys.LEFT);
+        driver.findElement(By.name(PANELFIN)).sendKeys("16");*/
         driver.findElement(By.name(BTNOK)).click();
         Thread.sleep(10000);
         driver.findElement(By.name(GUARDARCOMO)).click();
-        Thread.sleep(10000);
+        //Thread.sleep(250);
         driver.findElement(By.name(NOMBRE)).click();
         driver.findElement(By.name(NOMBRE)).sendKeys("SESOC__L-1022__138.csv");
         driver.findElement(By.name(GUARDAR)).click();
-        Thread.sleep(250);
+        //Thread.sleep(250);
         driver.findElement(By.name(CERRAR)).click();
         driver.findElement(By.name(SALIR)).click();
         driver.findElement(By.name(ARCHIVO)).click();
