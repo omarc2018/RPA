@@ -4,6 +4,8 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.NotDirectoryException;
+import java.util.Calendar;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -19,9 +21,10 @@ public class ProgramaION {
     static final String REPORTE = "Reports";
     static final String REGISTROS = "Revenue Log";
     static final String MOSTRAR = "Display";
-    static final String INICIO = "Since";
-    static final String PANELINICIO = "1501";
-    static final String PANELFIN = "17 diciembre 2018";
+    static final String ULTIMO = "Last";
+    static final String NDIAS = "48";
+    static final String OPCIONES = "Botón desplegable";
+    static final String DIAS = "days";
     static final String BTNOK = "OK";
     static final String GUARDARCOMO = "Save As...";
     static final String NOMBRE = "Nombre:";
@@ -33,6 +36,9 @@ public class ProgramaION {
         
     public static void main(String[] args) throws MalformedURLException, InterruptedException{
         
+        Fecha mes = new Fecha();
+        int dias = mes.fechaAtcual();
+        String cantidad = Integer.toString(dias) ;
         if(Red.pingLocal()== true){
         Red.pingLocal();
         Thread.sleep(50);
@@ -44,15 +50,6 @@ public class ProgramaION {
         
         driver.findElement(By.name("Password:")).click();       
         driver.findElement(By.name("Password:")).sendKeys("0");
-       /* driver.findElement(By.name("Password:")).sendKeys(Keys.TAB);
-        /* Thread.sleep(1000);
-        
-        driver.findElement(By.name("Exit")).sendKeys(Keys.TAB);
-         Thread.sleep(500);
-        driver.findElement(By.name("Help")).sendKeys(Keys.TAB);
-        Thread.sleep(500);
-        driver.findElement(By.name("Exit")).sendKeys(Keys.SPACE);*/
-        
         driver.findElement(By.name(BTNOK)).click();
         Thread.sleep(250);
        
@@ -66,23 +63,13 @@ public class ProgramaION {
         driver.findElement(By.name(REPORTE)).click();
         driver.findElement(By.name(REGISTROS)).click();
         driver.findElement(By.name(MOSTRAR)).click();
-        Thread.sleep(250);
-        driver.findElement(By.name(INICIO)).click();
-        driver.findElement(By.id(PANELINICIO)).click();
-        driver.findElement(By.id(PANELINICIO)).sendKeys(Keys.SPACE, Keys.SPACE, "01");
-        /*driver.findElement(By.id(PANELINICIO)).sendKeys(Keys.LEFT);
-        driver.findElement(By.id(PANELINICIO)).sendKeys("diciembre");
-        driver.findElement(By.id(PANELINICIO)).sendKeys(Keys.LEFT);
-        driver.findElement(By.id(PANELINICIO)).sendKeys("01");*/
-        Thread.sleep(500);
-        driver.findElement(By.name(PANELFIN)).click();
-        driver.findElement(By.name(PANELFIN)).sendKeys(Keys.SPACE, Keys.SPACE, "16");
-        /*driver.findElement(By.name(PANELFIN)).sendKeys(Keys.LEFT);
-        driver.findElement(By.name(PANELFIN)).sendKeys("diciembre");
-        driver.findElement(By.name(PANELFIN)).sendKeys(Keys.LEFT);
-        driver.findElement(By.name(PANELFIN)).sendKeys("16");*/
+        driver.findElement(By.name(ULTIMO)).click();
+        driver.findElement(By.name(NDIAS)).click();
+        driver.findElement(By.name(NDIAS)).sendKeys(cantidad);
+        driver.findElement(By.name(OPCIONES)).click();
+        driver.findElement(By.name(DIAS)).click();
         driver.findElement(By.name(BTNOK)).click();
-        Thread.sleep(10000);
+        Thread.sleep(55000);
         driver.findElement(By.name(GUARDARCOMO)).click();
         //Thread.sleep(250);
         driver.findElement(By.name(NOMBRE)).click();
