@@ -17,6 +17,7 @@ public class Fecha {
     public int fechaAtcual(){
         Calendar calendario = Calendar.getInstance();
         int mes = calendario.get(Calendar.MONTH);
+        //int dia = calendario.getLeastMaximum(mes+1);
         System.out.println(mes);
         int año=0;
         switch(mes+1){

@@ -18,14 +18,14 @@ public class Red {
     
     static boolean pingLocal(){
         
-        int timeout = 500;
-        String Ip;
+        int espera = 500;
+        String IP;
  
-        Ip = "10.122.32.101";
+        IP = "10.122.11.243";
  
         try{
-        InetAddress inet = InetAddress.getByName(Ip);
-        if (inet.isReachable(timeout)) {
+        InetAddress inet = InetAddress.getByName(IP);
+        if (inet.isReachable(espera)) {
             return true;
         } else {
            return false;

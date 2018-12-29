@@ -12,7 +12,7 @@ import org.openqa.selenium.winium.WiniumDriver;
 
 
 public class ProgramaNexus {
-    public static void main(String[] args) throws MalformedURLException, InterruptedException{
+    static void ejecutarNexus() throws MalformedURLException, InterruptedException{
         
         DesktopOptions option = new DesktopOptions();
         option.setApplicationPath("C:\\Program Files (x86)\\ElectroIndustries\\Communicator_Ext\\CommExt.exe");
