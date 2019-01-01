@@ -6,10 +6,8 @@
 package capa.datos;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.Properties;
 
 /**
@@ -30,12 +28,6 @@ public class FileProperties {
         }
         
         System.out.println("Propiedades");
-        
-        
     }
-    public static void main(String args[]) throws IOException{
-    FileProperties archivo = new FileProperties();
-    archivo.LeerArchivo();
-}
 }
 

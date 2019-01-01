@@ -14,3 +14,29 @@ RPA Ejecutado en: 94130 Milisegundos
 Lo que representa: 94.13 Segundos
 RPA Ejecutado en: 104829 Milisegundos
 Lo que representa: 104.829 Segundos
+RPA Ejecutado en: 81 Milisegundos
+Lo que representa: 8.1E-8 Segundos
+RPA Ejecutado en: 54 Milisegundos
+Lo que representa: 5.4E-8 Segundos
+RPA Ejecutado en: 50 Milisegundos
+Lo que representa: 5.0E-8 Segundos
+RPA Ejecutado en: 57 Milisegundos
+Lo que representa: 5.7E-8 Segundos
+RPA Ejecutado en: 44 Milisegundos
+Lo que representa: 4.4E-8 Segundos
+RPA Ejecutado en: 49 Milisegundos
+Lo que representa: 4.9E-8 Segundos
+RPA Ejecutado en: 41 Milisegundos
+Lo que representa: 4.1E-8 Segundos
+14.12.32 01-01-2019
+RPA Ejecutado en: 48 Milisegundos
+Lo que representa: 4.8E-8 Segundos
+14:13:28 01.01.2019
+RPA Ejecutado en: 50 Milisegundos
+Lo que representa: 5.0E-8 Segundos
+01.01.2019 14:15:02
+RPA Ejecutado en: 40 Milisegundos
+Lo que representa: 4.0E-8 Segundos
+01.01.2019 14:16:18
+RPA Ejecutado en: 43 Milisegundos
+Lo que representa: 4.3E-8 Segundos
