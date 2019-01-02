@@ -23,13 +23,13 @@ public class MedidaEficiencia {
     //String barra = File.separator;
     //String directorio = System.getProperty("user.dir")+barra+"src"+barra+"test"+barra+"java"+barra+"MedidaEficiencia"+barra;
     
-    public void eficiencia() throws IOException{
-        final double  NS_POR_SEGUNDO = 1000000000;
-        long INICIO_NS = System.currentTimeMillis();
+    public void eficiencia() throws IOException, InterruptedException{
+        final float MS_POR_SEGUNDO = 1000;
+        long INICIO_MS = System.currentTimeMillis();
         ProgramaION ejecutar = new ProgramaION();
         ejecutar.ejecutarION();
-        long DURACION_NS = System.currentTimeMillis() - INICIO_NS;
-        double DURACION_S1 = DURACION_NS/NS_POR_SEGUNDO;
+        long DURACION_MS = System.currentTimeMillis() - INICIO_MS;
+        float DURACION_S = DURACION_MS/MS_POR_SEGUNDO;
         Date fecha = new Date();
         DateFormat formatoHoraFecha = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
         String historial = formatoHoraFecha.format(fecha);
@@ -42,8 +42,8 @@ public class MedidaEficiencia {
                 escribir = new FileWriter(archivo, true);
                 imprimir = new PrintWriter(escribir);
                 imprimir.println(historial);
-                imprimir.println("RPA Ejecutado en: " + DURACION_NS + " Milisegundos");
-                imprimir.println("Lo que representa: " + DURACION_S1 + " Segundos");
+                imprimir.println("RPA Ejecutado en: " + DURACION_MS + " Milisegundos");
+                imprimir.println("Lo que representa: " + DURACION_S + " Segundos");
                 imprimir.close();
             } catch (IOException ex) {
                 Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
@@ -54,8 +54,8 @@ public class MedidaEficiencia {
                 escribir = new FileWriter(archivo, true);
                 imprimir = new PrintWriter(escribir);
                 imprimir.println(historial);
-                imprimir.println("RPA Ejecutado en: " + DURACION_NS + " Milisegundos");
-                imprimir.println("Lo que representa: " + DURACION_S1 + " Segundos");
+                imprimir.println("RPA Ejecutado en: " + DURACION_MS + " Milisegundos");
+                imprimir.println("Lo que representa: " + DURACION_S + " Segundos");
                 imprimir.close();
             } catch (IOException ex) {
                 Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);

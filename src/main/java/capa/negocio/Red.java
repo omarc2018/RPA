@@ -21,7 +21,7 @@ public class Red {
         int espera = 500;
         String IP;
  
-        IP = "10.122.11.243";
+        IP = "10.122.32.101";
  
         try{
         InetAddress inet = InetAddress.getByName(IP);

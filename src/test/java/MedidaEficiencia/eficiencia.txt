@@ -40,3 +40,12 @@ Lo que representa: 4.0E-8 Segundos
 01.01.2019 14:16:18
 RPA Ejecutado en: 43 Milisegundos
 Lo que representa: 4.3E-8 Segundos
+02.01.2019 16:27:11
+RPA Ejecutado en: 83220 Milisegundos
+Lo que representa: 8.322E-5 Segundos
+02.01.2019 16:41:42
+RPA Ejecutado en: 83568 Milisegundos
+Lo que representa: 8.3568E-5 Segundos
+02.01.2019 16:56:13
+RPA Ejecutado en: 83671 Milisegundos
+Lo que representa: 83.671 Segundos

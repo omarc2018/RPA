@@ -1,42 +1,16 @@
 package capa.negocio;
 
-
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.file.NotDirectoryException;
 import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.winium.DesktopOptions;
 import org.openqa.selenium.winium.WiniumDriver;
 
-
-
-
-
 public class ProgramaION {
-    /*static final String ASISTENTE = "Setup Assistant";
-    static final String REPORTE = "Reports";
-    static final String REGISTROS = "Revenue Log";
-    static final String MOSTRAR = "Display";
-    static final String ULTIMO = "Last";
-    static final String NDIAS = "48";
-    static final String OPCIONES = "Botón desplegable";
-    static final String DIAS = "days";
-    static final String BTNOK = "OK";
-    static final String GUARDARCOMO = "Save As...";
-    static final String NOMBRE = "Nombre:";
-    static final String GUARDAR = "Guardar";
-    static final String CERRAR = "Close";
-    static final String SALIR = "Exit";
-    static final String ARCHIVO = "File";*/
-    //String barra = File.separator;
-    //String directorio = System.getProperty("user.dir")+barra+"src"+barra+"capa"+barra+"datos"+barra+"propiedades"+barra;
-    
-    public void ejecutarION() throws IOException{
+     
+    public void ejecutarION() throws IOException, InterruptedException{
         
         Properties constantes = new Properties();
         constantes.load(new FileReader("D:\\Documents\\NetBeansProjects\\RPALecturaMedidores\\src\\main\\java\\capa\\datos\\propiedades\\constantesION.properties"));
@@ -46,7 +20,7 @@ public class ProgramaION {
         Fecha dias = new Fecha();
         String cantidad = Integer.toString(dias.numeroDias()) ;
         System.out.println("el número de días es: "+ cantidad);
-/*
+
         if(Red.pingLocal()== true){
         Red.pingLocal();
         Thread.sleep(50);
@@ -89,7 +63,7 @@ public class ProgramaION {
         }else{
             System.exit(0);
         }
-        */
+        
     }
 
     
