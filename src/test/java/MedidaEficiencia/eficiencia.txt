@@ -1,13 +1,13 @@
-28.12.2019 21:00:13
+28.12.2018 21:54:13
 RPA Ejecutado en: 84154 Milisegundos
 Lo que representa: 84.154 Segundos
-28.12.2019 22:28:54
+28.12.2018 22:30:54
 RPA Ejecutado en: 81029 Milisegundos
 Lo que representa: 81.029 Segundos
-28.12.2019 23:14:18
+28.12.2018 23:15:18
 RPA Ejecutado en: 80804 Milisegundos
 Lo que representa: 80.804 Segundos
-28.12.2019 23:29:48
+28.12.2018 23:31:48
 RPA Ejecutado en: 89805 Milisegundos
 Lo que representa: 89.805 Segundos
 01.01.2019 10:56:23
@@ -22,7 +22,7 @@ Lo que representa: 94.13 Segundos
 01.01.2019 12:16:05
 RPA Ejecutado en: 104829 Milisegundos
 Lo que representa: 104.829 Segundos
-02.01.2019 16:56:13
+02.01.2019 16:55:13
 RPA Ejecutado en: 83671 Milisegundos
 Lo que representa: 83.671 Segundos
 02.01.2019 17:08:37

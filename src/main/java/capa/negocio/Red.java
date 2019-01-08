@@ -31,7 +31,7 @@ public class Red {
            return false;
         }
         }catch(IOException e ){
-            JOptionPane.showMessageDialog(null, "hay problemas");
+            JOptionPane.showMessageDialog(null, "Problema de Red, revise su conexión y/o configuración");
         }
         return false;
  
