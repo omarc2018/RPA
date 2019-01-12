@@ -17,7 +17,7 @@ public class ProgramaION {
         Properties variables = new Properties();
         variables.load(new FileReader("D:\\Documents\\NetBeansProjects\\RPALecturaMedidores\\src\\main\\java\\capa\\datos\\propiedades\\variablesION.properties"));
         
-        Fecha dias = new Fecha();
+        DiasMes dias = new DiasMes();
         String cantidad = Integer.toString(dias.numeroDias()) ;
         System.out.println("el número de días es: "+ cantidad);
 
