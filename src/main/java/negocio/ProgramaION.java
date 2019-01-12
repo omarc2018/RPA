@@ -1,4 +1,4 @@
-package capa.negocio;
+package negocio;
 
 import java.io.FileReader;
 import java.io.IOException;

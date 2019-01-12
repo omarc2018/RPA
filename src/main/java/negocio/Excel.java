@@ -1,5 +1,5 @@
 
-package capa.negocio;
+package negocio;
 
 import java.net.MalformedURLException;
 import java.net.URL;

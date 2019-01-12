@@ -1,4 +1,4 @@
-package capa.negocio;
+package negocio;
 
 import java.util.Calendar;
 
